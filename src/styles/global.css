@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'AmaticSC-Regular', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: rgb(94, 48, 35);
+  background-image:
+  repeating-linear-gradient(to right,rgb(192, 133, 82) 0px 1px, transparent 10px 40px),
+  repeating-linear-gradient(to bottom, rgb(192, 133, 82) 0px 1px, transparent 10px 40px),
+  repeating-linear-gradient(to bottom, rgb(218, 180, 157), rgb(94, 48, 35));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input {
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
