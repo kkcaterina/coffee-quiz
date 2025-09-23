@@ -1,12 +1,35 @@
+.page {
+  display: flex;
+  justify-content: center;
+}
+
 .card {
   background-color: rgb(243, 233, 220);
   border: 10px rgb(94, 48, 35) dashed;
   border-radius: 10px;
-  margin: 100px;
-  padding: 70px;
+  margin: 200px 20px;
+  padding: 20px;
   display: flex;
   text-align: center;
-  gap: 70px;
+  gap: 20px;
   justify-content: center;
   flex-direction: column;
+  min-width: 265px;
+  max-width: 1000px;
+}
+
+.start-button {
+  background-color: rgb(218, 180, 157);
+  box-shadow: 5px 5px 5px 5px;
+  border: 1px solid rgb(94, 48, 35);
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: rgb(192, 133, 82);
+  box-shadow: 10px 10px 10px 10px;
+}
+
+.main-image {
+  max-width: 100%;
 }
