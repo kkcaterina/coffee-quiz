@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Coffee quiz!</title>
   </head>
   <body class="page">
-      <section class="card">
-        <h1 class="main-title">Объявляем Coffee quiz! Welcome!</h1>
-        <img class="main-image" src="<%=require('./images/coffee.jpg')%>">
-        <button class="start-button">Тык сюда, если хочешь проверить свои знания о кофе</button>
-      </section>
+    <div class="card">
+      <h1 class="main-title">Объявляем Coffee quiz! Welcome!</h1>
+      <img class="main-image" src="<%=require('./images/coffee.jpg')%>" />
+      <button class="start-button">
+        Тык сюда, если хочешь проверить свои знания о кофе
+      </button>
+    </div>
+    <template class="question-container">
+      <div class="question-content">
+        <form action="" class="form">
+          <h2 class="question-title"></h2>
+          <img
+            class="question-image"
+            src="<%=require('./images/coffee-1.jpg')%>"
+          />
+          <fieldset class="coffee-question">
+            <div>
+              <input type="radio" id="first" name="coffee" value="first" />
+              <label for="first"></label>
+            </div>
+            <div>
+              <input type="radio" id="second" name="coffee" value="second" />
+              <label for="second"></label>
+            </div>
+            <div>
+              <input type="radio" id="third" name="coffee" value="third" />
+              <label for="third"></label>
+            </div>
+            <div>
+              <input type="radio" id="fourth" name="coffee" value="fourth" />
+              <label for="fourth"></label>
+            </div>
+          </fieldset>
+          <button type="submit" class="submit-button"></button>
+        </form>
+      </div>
+    </template>
   </body>
 </html>

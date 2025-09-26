@@ -1,37 +1,48 @@
-.page {
+.question-content {
+  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   gap: 20px;
   min-width: 265px;
   max-width: 1000px;
-  margin: 200px 20px;
+  margin: 20px auto;
   border: 10px rgb(94, 48, 35) dashed;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
   background-color: rgb(243, 233, 220);
+  transition: all 0.3s ease;
 }
 
-.start-button {
+.question-content.incorrect {
+  border-color: rgb(111, 8, 8);
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.correct-answer {
+  color: rgb(57, 141, 57) !important;
+  font-weight: bold !important;
+}
+
+.submit-button {
   border: 1px solid rgb(94, 48, 35);
   box-shadow: 5px 5px 5px 5px;
   background-color: rgb(218, 180, 157);
   cursor: pointer;
 }
 
-.start-button:hover {
+.submit-button:hover {
   box-shadow: 10px 10px 10px 10px;
   background-color: rgb(192, 133, 82);
 }
 
-.main-image {
+.submit-button:disabled {
+  background-color: rgb(243, 233, 220);
+  cursor: not-allowed;
+}
+
+.question-image {
   max-width: 100%;
 }
